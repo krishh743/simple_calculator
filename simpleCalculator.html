@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      //takeing variables for storing data
+      // then make function for call them
+      var numOne, numTwo, res,res2,res3,res4, temp;
+      
+function fun1() {
+  numOne = parseInt(document.getElementById("one").value);
+        numTwo = parseInt(document.getElementById("two").value);
+        if (numOne && numTwo) {
+          temp = document.getElementById("res");
+          temp.style.display = "block";
+          res = numOne + numTwo;
+          document.getElementById("add").value = res;
+}
+}
+
+
+function fun2(){
+  numOne = parseInt(document.getElementById("one").value);
+        numTwo = parseInt(document.getElementById("two").value);
+        if (numOne && numTwo) {
+          temp = document.getElementById("res2");
+          temp.style.display = "block";
+          res2 = numOne - numTwo;
+          document.getElementById("subtract").value = res2;
+}
+}
+function fun3(){
+  numOne = parseInt(document.getElementById("one").value);
+        numTwo = parseInt(document.getElementById("two").value);
+        if (numOne && numTwo) {
+          temp = document.getElementById("res3");
+          temp.style.display = "block";
+          res3= numOne * numTwo;
+          document.getElementById("multiply").value = res3;
+}
+}
+
+function fun4(){
+  numOne = parseInt(document.getElementById("one").value);
+        numTwo = parseInt(document.getElementById("two").value);
+        if (numOne && numTwo) {
+          temp = document.getElementById("res4");
+          temp.style.display = "block";
+          res4= numOne / numTwo;
+          document.getElementById("divide").value = res4;
+}
+}
+
+
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      //taking input in paragraph tag for showing data on page
+      <p id="input">
+        Enter First Number: <input id="one" /> <br /><br />
+        Enter Second Number: <input id="two" />
+      </p>
+      <!-- <p><button onclick="fun()">Add, Subtract, Multiply, Divide</button></p> -->
+      perform functionality in input then result
+      <p id="res" style="display: none">
+        Addition Result = <input id="add" /><br /><br />
+      </p>
+      <p id="res2" style="display: none">
+        Subtraction Result = <input id="subtract" /><br /><br />
+      </p>
+      <p  id="res3" style="display: none">
+        Multiplication Result = <input id="multiply" /><br /><br />
+      </p>
+      <p  id="res4" style="display: none">
+        Division Result = <input id="divide" />
+      
+      </p>
+
+          <button onclick="fun1()" id="add">Add</button>
+          <button onclick="fun2()" id="subtract">Subtract</button>
+
+          <button onclick="fun3()">Multiply</button>
+
+          <button onclick="fun4()">Divide</button>
+
+
+    </div>
+  </body>
+</html>
